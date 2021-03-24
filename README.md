@@ -2,4 +2,4 @@
 Survey to get the customer feedback on the recent purchase.
 ## Development/Local running
 
-Open index.html in any browser to see the project
+Open index.html in any browser to run the project
