@@ -1,0 +1,270 @@
+html {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-style: normal;
+    font-family: 'IBM Plex Sans';
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+#app {
+    height: 100vh;
+    background-color: #F2F8FF;
+    padding: 19px 45px 45px 51px;
+}
+
+#container {
+    width: 100%;
+    height: 85%;
+    padding-top: 15%;
+}
+
+#loaders {
+    display: none;
+    height: 100%;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 133%;
+    letter-spacing: -0.005em;
+    color: #000000;
+}
+
+.greetings {
+    margin-left: 20%;
+}
+
+.greetings__main {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 133%;
+    letter-spacing: -0.01em;
+    color: #000000;
+}
+
+.greetings__sub {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+    letter-spacing: 0.005em;
+    margin-bottom: 20px;
+}
+
+.question {
+    width: 50%;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 130%;
+    color: #000000;
+}
+
+.picker {
+    width: 30%;
+    height: 40px;
+    border: none;
+    padding: 5px;
+    display: flex;
+    margin-top: 28px;
+    align-items: center;
+    border-radius: 14px;
+    background: rgba(251, 229, 201, 0.5);
+    box-shadow: inset 0px 1px 2px rgba(97, 97, 97, 0.2), inset 0px 2px 4px rgba(97, 97, 97, 0.2);
+}
+
+.picker__button {
+    height: 100%;
+    border: none;
+    font-size: 16px;
+    color: #BF710F;
+    display: flex;
+    align-items: center;
+    padding: 0px 12px;
+    margin-right: 10px;
+    border-radius: 12px;
+    background: transparent;
+}
+
+.picker__button--active {
+    color: #000000;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(191, 113, 15, 0.2), 0px 2px 4px rgba(191, 113, 15, 0.2);
+}
+
+.radio__input {
+    margin-right: 22px;
+}
+
+.radios__button {
+    margin-top: 40px;
+}
+
+.textArea {
+    width: 50%;
+    resize: none;
+    height: 130px;
+    margin-top: 36px;
+    background: #FFFFFF;
+    border: 0.2px solid #D7D2D2;
+    box-shadow: inset 3px 2px 4px rgb(0 0 0 / 8%);
+}
+
+.textArea::placeholder {
+    color: #000000;
+    padding-top: 16px;
+    padding-left: 17px;
+    font-size: 12px;
+}
+
+.thanksContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thanksContainer__text1 {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 130%;
+    color: #414141;
+    margin-bottom: 8px;
+}
+
+.thanksContainer__text2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 138%;
+    color: #818181;
+    text-align: center;
+}
+
+.imageContainer {
+    position: relative;
+}
+
+.tickImage {
+    position: absolute;
+    left: 35px;
+    top: 35px;
+}
+
+.button {
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    justify-content: space-evenly;
+}
+
+.button--back {
+    width: 108px;
+    color: #0F56B3;
+    border: 1px solid #C0C0C0;
+    background-color: #FFFFFF;
+}
+
+.button--next {
+    width: 106px;
+    border: none;
+    color: #C5DCFA;
+    background-color: #0F56B3;
+    box-shadow: 0px 1px 2px rgba(15, 86, 179, 0.2), 0px 2px 4px rgba(15, 86, 179, 0.2)
+}
+
+.button--submit {
+    display: none;
+    width: 137px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 900px) {
+    .picker {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .question {
+        width: 60%;
+    }
+    .picker {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    button {
+        cursor: none;
+    }
+    #app {
+        padding: 10px 20px 50px 20px;
+    }
+    #container {
+        padding-top: 45%;
+    }
+    .title {
+        font-size: 40px;
+    }
+    .question {
+        width: 80%;
+        font-size: 25px;
+    }
+    .greetings {
+        margin-left: 15%;
+    }
+    .picker {
+        width: 100%;
+    }
+    .picker__button--active {
+        padding: 0px 10px;
+    }
+    .textArea {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:1410px) {
+    #container {
+        padding-top: 12%;
+    }
+    .question {
+        width: 37%;
+    }
+    .picker {
+        width: 20%;
+    }
+}
+
+.loader{
+    font-size: 30px;
+}
+
+
+@keyframes blink {50% { color: transparent }}
+.loader { animation: 1s blink infinite }
+.loader:nth-child(2) { animation-delay: 250ms }
+.loader:nth-child(3) { animation-delay: 500ms }
