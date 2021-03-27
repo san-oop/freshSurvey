@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fresh Survey</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <div class="title">
+            FreshFruits
+        </div>
+        <div id="container">
+        </div>
+        <div class="footer">
+            <button id="backButton" class="button button--back">
+                <img src="../assets/arrow-left.png" alt="back">
+                <label>Back</label>
+            </button>
+            <button id="nextButton" class="button button--next">
+                <label>Next</label>
+                <img src="../assets/arrow-right.png" alt="next">
+            </button>
+            <button id="submitButton" class="button button--next button--submit">
+                <label id='submitLabel'>Submit</label>
+                <div id="loaders">
+                    <span class="loader">.</span>
+                    <span class="loader">.</span>
+                    <span class="loader">.</span>
+                </div>
+            </button>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
